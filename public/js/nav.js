@@ -1,17 +1,17 @@
-var scrollpos = window.screenY;
+var scrollpos = window.scrollY;
 var header = document.getElementById("header");
 var navcontent = document.getElementById("nav-content");
 var brandname = document.getElementById("brandname");
 var toToggle = document.querySelectorAll(".toggleColour");
 
 document.addEventListener("scroll", function () {
-    scrollpos = window.screenY;
+    scrollpos = window.scrollY;
 
     if (scrollpos > 10) {
         header.classList.add("bg-gray-900");
         for (var i = 0; i < toToggle.length; i++) {
             toToggle[i].classList.add("text-gray-800");
-            toToggle[i].classList.remove("this-white");
+            toToggle[i].classList.remove("text-white");
         }
         header.classList.add("shadow");
         navcontent.classList.remove("bg-gray-100");
