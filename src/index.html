@@ -128,6 +128,58 @@
             <section class="mt-16 sm:py-16 bg-gray-100" id="Section4">
                 <h2>Section 4</h2>
             </section>
+
+            <section class="mt-16 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6" id="Contacto" data-aos="zoom-in">
+                <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900">
+                    Contacto
+                </h2>
+                <!-- <p class="mb-8 lg:mb-16 font-normal text-center text-gray-500 sm:text-xl">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum impedit officiis maiores inventore
+                    aperiam sit
+                </p> -->
+                <section class="bg-gray-100">
+                    <form action="" class="px-4 mx-auto max-w-screen-md">
+                        <input hidden type="text" value="TEST">
+                        <div class="flex flex-col gap-8">
+                            <div>
+                                <label for="input1" class="block mb-2 text-sm font-medium">
+                                    Input 1
+                                </label>
+                                <input type="text" id="input1" maxlength="40" name="input1" size="20"
+                                    class="shadow-sm bg-white border border-gray-300 text-sm rounded-md focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5"
+                                    placeholder="Input 1">
+                            </div>
+                            <div>
+                                <label for="input2" class="block mb-2 text-sm font-medium">
+                                    Input 2
+                                </label>
+                                <input type="text" id="input2" maxlength="40" name="input2" size="20"
+                                    class="shadow-sm bg-white border border-gray-300 text-sm rounded-md focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5"
+                                    placeholder="Input 2">
+                            </div>
+                            <div>
+                                <label for="email" class="block mb-2 text-sm font-medium">
+                                    email
+                                </label>
+                                <input type="text" id="email" maxlength="80" name="email" size="20"
+                                    class="shadow-sm bg-white border border-gray-300 text-sm rounded-md focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5"
+                                    placeholder="email@input.com" required>
+                            </div>
+                            <div>
+                                <label for="phone" class="block mb-2 text-sm font-medium">
+                                    Phone number
+                                </label>
+                                <input type="text" id="phone" maxlength="10" name="input2" size="20"
+                                    class="shadow-sm bg-white border border-gray-300 text-sm rounded-md focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5"
+                                    onkeypress="return(event.charCode !=8 && event.charCode == 0 || (event.charCode >= 48 && event.charCode <= 57))"
+                                    pattern="\d*"
+                                    onpaste="return false;"
+                                    placeholder="9999999999" required>
+                            </div>
+                        </div>
+                    </form>
+                </section>
+            </section>
         </div>
     </main>
 
