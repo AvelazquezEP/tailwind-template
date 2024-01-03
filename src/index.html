@@ -161,7 +161,7 @@
                                 <label for="email" class="block mb-2 text-sm font-medium">
                                     email
                                 </label>
-                                <input type="text" id="email" maxlength="80" name="email" size="20"
+                                <input type="text" id="email" name="email" maxlength="80" size="20"
                                     class="shadow-sm bg-white border border-gray-300 text-sm rounded-md focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5"
                                     placeholder="email@input.com" required>
                             </div>
@@ -169,12 +169,52 @@
                                 <label for="phone" class="block mb-2 text-sm font-medium">
                                     Phone number
                                 </label>
-                                <input type="text" id="phone" maxlength="10" name="input2" size="20"
+                                <input type="text" id="phone" name="input2" maxlength="10" size="20"
                                     class="shadow-sm bg-white border border-gray-300 text-sm rounded-md focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5"
                                     onkeypress="return(event.charCode !=8 && event.charCode == 0 || (event.charCode >= 48 && event.charCode <= 57))"
-                                    pattern="\d*"
-                                    onpaste="return false;"
-                                    placeholder="9999999999" required>
+                                    pattern="\d*" onpaste="return false;" placeholder="9999999999" required>
+                            </div>
+                            <div>
+                                <label for="select5" class="block mb-2 text-sm font-medium">
+                                    Select Input 5
+                                </label>
+                                <select name="select5" id="select5" title="select5"
+                                    class="shadow-sm bg-white border border-gray-300 text-gray-900 text-sm rounded-md focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5"
+                                    required>
+                                    <option value="">-None-</option>
+                                    <option value="option1">Option 1</option>
+                                    <option value="option2">Option 2</option>
+                                    <option value="option3">Option 3</option>
+                                    <option value="option4">Option 4</option>
+                                    <option value="option5">Option 5</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label for="input6" class="block mb-2 text-sm font-medium">
+                                    Input 6 text area
+                                </label>
+                                <textarea name="message" id="message" rows="6"
+                                    class="block p-2.5 w-full text-sm text-gray-900 bg-white rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500"
+                                    placeholder="Example text"></textarea>
+                            </div>
+                            <div>
+                                <label for="input1" class="block mb-2 text-sm font-medium">
+                                    Input 2 radio
+                                </label>
+                                <div class="radioGroup">
+                                    <input type="radio" id="radio" name="radio" value="Yes" checked="true">
+                                    <label for="Agree">Yes</label>
+                                </div>
+                                <div class="radioGroup">
+                                    <input type="radio" id="radio" name="radio" value="No">
+                                    <label for="Agree">No</label>
+                                </div>
+                            </div>
+                            <div class="text-center mt-8">
+                                <button name="submitButton" id="submitButton"
+                                    class="w-11/12 py-2.5 px-5 mr-2 mb-2 text-xl font-medium focus:outline-none rounded-md border border-gray-200 focus:z-10 focus:ring-gray-200">
+                                    Send
+                                </button>
                             </div>
                         </div>
                     </form>
