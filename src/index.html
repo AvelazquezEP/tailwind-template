@@ -25,22 +25,21 @@
     <title>Website title</title>
 </head>
 
-<body>
+<body">
 
-    <header class="bg-gray-200">
+    <header class="bg-gray-50">
         <div>
             <nav id="header" class="w-full z-30 top-0">
                 <div
                     class="w-full mx-auto flex flex-wrap items-center justify-between mt-0 py-2 max-w-screen-xl sm:py-5">
                     <div class="pl-4 flex items-center">
                         <a href="index.html">
-                            <img src="" class="h-9 mr-2 sm:h-9" alt="Eric Price Logo" loading="eager"
-                                title="Attorney Eric Price" />
+                            <img src="" class="h-9 mr-2 sm:h-9" alt="Brand title" loading="eager" title="Logo title" />
                         </a>
                     </div>
                     <div class="block lg:hidden pr-4">
                         <button id="nav-toggle" name="toggle"
-                            class="flex items-center p-1 text-white hover:text-orange-200 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+                            class="flex items-center p-1 text-gray-700 hover:text-orange-200 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
                             <i class="fa-solid fa-bars text-2xl">
                                 <title>Menu</title>
                             </i>
@@ -48,22 +47,22 @@
                     </div>
                     <div class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden mt-2 lg:mt-0 lg:bg-transparent p-4 lg:p-0 z-20"
                         id="nav-content">
-                        <ul class="list-reset lg:flex justify-end flex-1 items-center text-white">
+                        <ul class="list-reset lg:flex justify-end flex-1 items-center text-gray-700">
                             <li class="mr-1">
                                 <a href="#Section1"
-                                    class="inline-block no-underline hover:text-amber-500 hover:text-underline py-2 px-4 lg:text-white">
+                                    class="inline-block no-underline hover:text-amber-500 hover:text-underline py-2 px-4">
                                     Section 1
                                 </a>
                             </li>
                             <li class="mr-1">
                                 <a href="#Section2"
-                                    class="inline-block no-underline hover:text-amber-500 hover:text-underline py-2 px-4 lg:text-white">
+                                    class="inline-block no-underline hover:text-amber-500 hover:text-underline py-2 px-4">
                                     Section 2
                                 </a>
                             </li>
                             <li class="mr-1">
                                 <a href="#Section3"
-                                    class="inline-block no-underline hover:text-amber-500 hover:text-underline py-2 px-4 lg:text-white">
+                                    class="inline-block no-underline hover:text-amber-500 hover:text-underline py-2 px-4">
                                     Section 3
                                 </a>
                             </li>
@@ -72,6 +71,38 @@
                 </div>
                 <hr class="border-b border-gray-100 opacity-25 my-0 py-0">
             </nav>
+
+            <div class="flex flex-col items-center lg:justify-around lg:flex-row px-4 mx-auto max-w-screen-xl lg:px-6">
+                <section class="lg:w-1/2 py-12 text-gray-700" data-aos="fade-right">
+                    <span class="text-xl">
+                        Lorem ipsum dolor sit amet
+                    </span>
+                    <h1 class="text-4xl leading-10 mt-8 font-bold">
+                        Lorem ipsum dolor sit amet
+                    </h1>
+                    <p class="mt-8 text-2xl font-light">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam maxime magni blanditiis quod
+                        neque ullam cupiditate atque deleniti error
+                    </p>
+                    <div class="flex flex-row gap-4 items-center mt-4 lg:flex-col lg:items-start">
+                        <button class="w-11/12 lg:w-2/6 bg-gray-300 hover:bg-gray-400 font-semibold py-2 px-2 rounded">
+                            <a href="tel:(999)999-9999" class="text-[1.1rem]">
+                                <i class="fa-solid fa-phone"></i>
+                                (999) 999-9999
+                            </a>
+                        </button>
+                        <button
+                            class="w-11/12 lg:w-2/6 border border-gray-300 hover:bg-gray-400  font-bold py-2 px-2 rounded">
+                            <a href="#Contacto" class="text">
+                                Contactanos hoy
+                            </a>
+                        </button>
+                    </div>
+                </section>
+                <section class="lg:w-1/2 p-3" data-aos="fade-up">
+                    <img src="" alt="" class="mx-auto" loading="eager" title="Title image">
+                </section>
+            </div>
         </div>
 
         <div></div>
@@ -82,37 +113,76 @@
     <!-- MAIN -->
     <main>
         <div class="px-4 mx-auto max-w-screen-xl lg:px-6">
-            <section class="mt-16 sm:py-16">
+            <section class="mt-16 sm:py-16 bg-gray-100" id="Section1">
                 <h2>Section 1</h2>
             </section>
 
-            <section class="mt-16 sm:py-16">
+            <section class="mt-16 sm:py-16 bg-gray-100" id="Section2">
                 <h2>Section 2</h2>
             </section>
 
-            <section class="mt-16 sm:py-16">
+            <section class="mt-16 sm:py-16 bg-gray-100" id="Section3">
                 <h2>Section 3</h2>
             </section>
 
-            <section class="mt-16 sm:py-16">
+            <section class="mt-16 sm:py-16 bg-gray-100" id="Section4">
                 <h2>Section 4</h2>
             </section>
         </div>
     </main>
 
-    <footer class="bg-gray-50">
-        <div>
-            <!-- section 1  -->
-            <p>section 1</p>
-        </div>
-        <div>
-            <!-- section 2  -->
-            <p>section 2</p>
-        </div>
-        <div>
+    <footer class="bg-gray-50 p-3 mt-16 text-center text-gray-700">
+        <div class="flex flex-col gap-5 pt-5 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-60 md:flex-row">
+            <div class="md:w-4/12">
+                <div>
+                    <a href="">
+                        <img src="" class="w-[15rem] mx-auto pb-4" alt="Bran logo" title="Bran title">
+                    </a>
+                    <div class="flex flex-col items-center gap-1 justify-center mt-2">
+                        <div>
+                            <a href="tel:(999)999-9999" class="text-base">
+                                <i class="fa-solid fa-phone"></i>
+                                (999) 999-9999
+                            </a>
+                        </div>
+                        <div>
+                            <a href="mailto:info@info.com" class="text-base">
+                                <i class="fa-regular fa-envelope"></i>
+                                info@info.com
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-row justify-around w-4/5 mx-auto">
+                    <div class="font-bold rounded-full bg-white flex items-center justify-center"
+                        style="height: 40px; width: 40px; font-size: 18px;">
+                        <a href="" target="_blank">
+                            <i class="fa-brands fa-facebook text-2xl text-[#3b5999]"></i>
+                        </a>
+                    </div>
+                    <div class="font-bold rounded-full bg-white flex items-center justify-center"
+                        style="height: 40px; width: 40px; font-size: 18px;">
+                        <a href="" target="_blank">
+                            <i class="fa-brands fa-tiktok text-2xl text-gray-900"></i>
+                        </a>
+                    </div>
+                    <div class="font-bold rounded-full bg-white flex items-center justify-center"
+                        style="height: 40px; width: 40px; font-size: 18px;">
+                        <a href="" target="_blank">
+                            <i class="fa-brands fa-facebook text-2xl text-[#3b5999]"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
 
-            <!-- section 3  -->
-            <p>section 3</p>
+            <div class="md:w-4/12">
+                <!-- section 2  -->
+                <p>section 2</p>
+            </div>
+            <div class="md:w-4/12">
+                <!-- section 3  -->
+                <p>section 3</p>
+            </div>
         </div>
     </footer>
 
@@ -120,6 +190,11 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="/public/js/nav.js"></script>
     <script src="/public/js/toggle.js"></script>
-</body>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    </body>
 
 </html>
