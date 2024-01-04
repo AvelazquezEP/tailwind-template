@@ -79,7 +79,7 @@
                     </span>
                     <h1 class="text-4xl leading-10 mt-8 font-bold">
                         Lorem ipsum dolor sit amet
-                    </h1>                    
+                    </h1>
                     <p class="mt-8 text-2xl font-light">
                         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam maxime magni blanditiis quod
                         neque ullam cupiditate atque deleniti error
@@ -138,8 +138,8 @@
                     aperiam sit
                 </p> -->
                 <section class="bg-gray-100">
-                    <form action="" class="px-4 mx-auto max-w-screen-md">
-                        <input hidden type="text" value="TEST">
+                    <div class="px-4 mx-auto max-w-screen-md">
+                        <input hidden type="text" value="TEST"> 
                         <div class="flex flex-col gap-8">
                             <div>
                                 <label for="input1" class="block mb-2 text-sm font-medium">
@@ -148,6 +148,7 @@
                                 <input type="text" id="input1" maxlength="40" name="input1" size="20"
                                     class="shadow-sm bg-white border border-gray-300 text-sm rounded-md focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5"
                                     placeholder="Input 1">
+                                <span id="msg_input_1" style="color: red;"></span>
                             </div>
                             <div>
                                 <label for="input2" class="block mb-2 text-sm font-medium">
@@ -169,7 +170,7 @@
                                 <label for="phone" class="block mb-2 text-sm font-medium">
                                     Phone number
                                 </label>
-                                <input type="text" id="phone" name="input2" maxlength="10" size="20"
+                                <input type="text" id="phone" name="phone" maxlength="10" size="20"
                                     class="shadow-sm bg-white border border-gray-300 text-sm rounded-md focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5"
                                     onkeypress="return(event.charCode !=8 && event.charCode == 0 || (event.charCode >= 48 && event.charCode <= 57))"
                                     pattern="\d*" onpaste="return false;" placeholder="9999999999" required>
@@ -217,7 +218,7 @@
                                 </button>
                             </div>
                         </div>
-                    </form>
+                    </div>
                 </section>
             </section>
         </div>
@@ -306,6 +307,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="/public/js/nav.js"></script>
     <script src="/public/js/toggle.js"></script>
+    <script src="/public/js/validation.js"></script>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>

@@ -51,6 +51,6 @@ body {
     background-color: #979797;
 }
 
-h2:has(+ h2) {
+h1:has(+ h2) {
     color: aqua;
 }
