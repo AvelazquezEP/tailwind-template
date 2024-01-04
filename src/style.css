@@ -50,3 +50,7 @@ body {
 .sendButton:hover {
     background-color: #979797;
 }
+
+h2:has(+ h2) {
+    color: aqua;
+}
