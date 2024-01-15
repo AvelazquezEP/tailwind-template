@@ -34,7 +34,8 @@
                     class="w-full mx-auto flex flex-wrap items-center justify-between mt-0 py-2 max-w-screen-xl sm:py-5">
                     <div class="pl-4 flex items-center">
                         <a href="index.html">
-                            <img src="" class="h-9 mr-2 sm:h-9" alt="Brand title" loading="eager" title="Logo title" />
+                            <img src="/public/img/EricpriceLogo.svg" class="h-9 mr-2 sm:h-9" alt="Brand title"
+                                loading="eager" title="Logo title" />
                         </a>
                     </div>
                     <div class="block lg:hidden pr-4">
@@ -47,7 +48,68 @@
                     </div>
                     <div class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden mt-2 lg:mt-0 lg:bg-transparent p-4 lg:p-0 z-20"
                         id="nav-content">
+
+                        <!-- ORIGINAL NAVBAR MENU -->
                         <ul class="list-reset lg:flex justify-end flex-1 items-center text-gray-700">
+                            <!-- #region SUB-MENU -->
+                            <div class="">
+                                <div class="">
+                                    <div class=" relative inline-block text-left dropdown">
+
+                                        <span class="rounded-md shadow-sm">
+                                            <!-- Dont add the Text size to can have all option in the same size -->
+                                            <button
+                                                class="inline-flex justify-center w-full px-4 py-2 font-medium leading-5 text-gray-700 transition duration-150 ease-in-out bg-white hover:text-gray-500 focus:outline-none focus:border-blue-300 focus:shadow-outline-blue active:bg-gray-50 active:text-gray-800"
+                                                type="button" aria-haspopup="true" aria-expanded="true">
+                                                <span class="hover:text-amber-500">Section
+                                                    4</span>
+                                                <svg class="w-5 h-5 ml-2 -mr-1" viewBox="0 0 20 20" fill="currentColor">
+                                                    <path fill-rule="evenodd"
+                                                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                                        clip-rule="evenodd"></path>
+                                                </svg>
+                                            </button>
+                                        </span>
+
+                                        <div class="hidden dropdown-menu">
+                                            <div class="absolute w-56 mt-2 origin-top-right bg-white border border-gray-200 divide-y divide-gray-100 rounded-md shadow-lg outline-none"
+                                                aria-labelledby="headlessui-menu-button-1"
+                                                id="headlessui-menu-items-117" role="menu">
+                                                <!-- <div class="px-4 py-3">
+                                                <p class="text-sm leading-5">Signed in as</p>
+                                                <p class="text-sm font-medium leading-5 text-gray-900 truncate">
+                                                    eric@example.com
+                                                </p>
+                                            </div> -->
+                                                <div class="py-1">
+                                                    <a href="javascript:void(0)"
+                                                        class="text-gray-700 flex justify-between w-full px-4 py-2 text-sm leading-5 text-left"
+                                                        role="menuitem">Submenu 1</a>
+                                                    <a href="javascript:void(0)"
+                                                        class="text-gray-700 flex justify-between w-full px-4 py-2 text-sm leading-5 text-left"
+                                                        role="menuitem">Submenu 2</a>
+                                                    <span role="menuitem" tabindex="-1"
+                                                        class="flex justify-between w-full px-4 py-2 text-sm leading-5 text-left text-gray-700 cursor-not-allowed opacity-50"
+                                                        aria-disabled="true">New feature (soon)</span>
+                                                </div>
+                                                <!-- <div class="py-1">
+                                                <a href="javascript:void(0)"
+                                                    class="text-gray-700 flex justify-between w-full px-4 py-2 text-sm leading-5 text-left"
+                                                    role="menuitem">Sign out</a>
+                                            </div> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <style>
+                                .dropdown:focus-within .dropdown-menu {
+                                    /* @apply block; */
+                                    display: block;
+                                }
+                            </style>
+                            <!-- #endregion  -->
                             <li class="mr-1">
                                 <a href="#Section1"
                                     class="inline-block no-underline hover:text-amber-500 hover:text-underline py-2 px-4">
@@ -67,6 +129,7 @@
                                 </a>
                             </li>
                         </ul>
+
                     </div>
                 </div>
                 <hr class="border-b border-gray-100 opacity-25 my-0 py-0">
