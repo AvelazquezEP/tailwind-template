@@ -55,3 +55,8 @@ body {
 h1:has(+ h2) {
     color: aqua;
 }
+
+.dropdown:focus-within .dropdown-menu {
+    /* @apply block; */
+    display: block;
+}
