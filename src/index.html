@@ -31,7 +31,8 @@
 
     <header class="bg-gray-50">
         <div>
-            <nav id="header" class="bg-white w-full z-30 top-0 fixed">
+            <!-- fixed -->
+            <nav id="header" class="bg-white w-full top-0">
                 <div
                     class="w-full mx-auto flex flex-wrap items-center justify-between mt-0 py-2 max-w-screen-xl sm:py-5">
                     <div class="pl-4 flex items-center">
@@ -40,6 +41,8 @@
                                 loading="eager" title="Logo title" />
                         </a>
                     </div>
+
+                    <!-- Toggle Button -->
                     <div class="block lg:hidden pr-4">
                         <button id="nav-toggle" name="toggle"
                             class="flex items-center p-1 text-gray-700 hover:text-gray-950 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
@@ -48,21 +51,18 @@
                             </i>
                         </button>
                     </div>
-                    <div class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden mt-2 lg:mt-0 lg:bg-transparent p-4 lg:p-0 z-20"
+
+                    <!-- MENU -->
+                    <div class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden mt-2 lg:mt-0 p-4 lg:p-0"
                         id="nav-content">
-                        inc
-                        <!-- ORIGINAL NAVBAR MENU -->
-                        <ul class="list-reset lg:flex justify-end flex-1 items-center text-gray-700">
-                            <!-- #region SUB-MENU -->
+
+                        <ul class="list-reset lg:flex gap-8 justify-end flex-1 items-center text-gray-700">
+
                             <li class="mr-1">
-                                <!-- py-2 px-4 -->
                                 <div class="relative inline-block text-left dropdown">
-                                    <!-- class="rounded-md shadow-sm" -->
                                     <span>
-                                        <!-- Dont add the Text size to can have all option in the same size -->
-                                        <!-- class="inline-flex justify-center w-full px-4 py-2 font-medium leading-5 text-gray-700 transition duration-150 ease-in-out bg-white hover:text-gray-500 focus:outline-none focus:border-blue-300 focus:shadow-outline-blue active:bg-gray-50 active:text-gray-800" -->
                                         <button
-                                            class="inline-flex justify-center w-full px-4 py-2 font-medium leading-5 text-gray-700 transition duration-150 ease-in-out bg-white hover:text-gray-500 focus:outline-none focus:border-blue-300 focus:shadow-outline-blue active:bg-gray-50 active:text-gray-800"
+                                            class="inline-flex justify-center w-full px-4 py-2 font-medium leading-5 text-gray-700 transition duration-150 ease-in-out bg-white hover:text-gray-500"
                                             type="button" aria-haspopup="true" aria-expanded="true">
                                             <span class="hover:text-amber-500">
                                                 dropdown Menu
@@ -74,17 +74,10 @@
                                             </svg>
                                         </button>
                                     </span>
-
                                     <div class="hidden dropdown-menu">
-                                        <div class="absolute mt-2 origin-top-right bg-white border border-gray-200 divide-y divide-gray-100 rounded-md shadow-lg outline-none"
+                                        <div class="absolute mt-2 origin-top-right bg-white border border-gray-200 divide-y divide-gray-100 rounded-md shadow-lg outline-none z-10"
                                             aria-labelledby="headlessui-menu-button-1" id="headlessui-menu-items-117"
                                             role="menu">
-                                            <!-- <div class="px-4 py-3">
-                                                <p class="text-sm leading-5">Signed in as</p>
-                                                <p class="text-sm font-medium leading-5 text-gray-900 truncate">
-                                                    eric@example.com
-                                                </p>
-                                            </div> -->
                                             <div class="py-1">
                                                 <a href="javascript:void(0)"
                                                     class="text-gray-700 flex justify-between w-full px-4 py-2 text-sm leading-5 text-left"
@@ -96,47 +89,175 @@
                                                     class="flex justify-between w-full px-4 py-2 text-sm leading-5 text-left text-gray-700 cursor-not-allowed opacity-50"
                                                     aria-disabled="true">New feature (soon)</span>
                                             </div>
-                                            <!-- <div class="py-1">
-                                                <a href="javascript:void(0)"
-                                                    class="text-gray-700 flex justify-between w-full px-4 py-2 text-sm leading-5 text-left"
-                                                    role="menuitem">Sign out</a>
-                                            </div> -->
                                         </div>
                                     </div>
                                 </div>
                             </li>
 
-                            <!-- <style>
-                                .dropdown:focus-within .dropdown-menu {
-                                    /* @apply block; */
-                                    display: block;
-                                }
-                            </style> -->
-                            <!-- #endregion  -->
                             <li class="mr-1">
-                                <a href="#Section1"
-                                    class="inline-block no-underline hover:text-amber-500 hover:text-underline py-2 px-4">
-                                    Section 1
-                                </a>
+                                <div class="relative inline-block text-left dropdown">
+                                    <span>
+                                        <button
+                                            class="inline-flex justify-center w-full px-4 py-2 font-medium leading-5 text-gray-700 transition duration-150 ease-in-out bg-white hover:text-gray-500"
+                                            type="button" aria-haspopup="true" aria-expanded="true">
+                                            <span class="hover:text-amber-500">
+                                                dropdown Menu 2
+                                            </span>
+                                            <svg class="w-5 h-5 ml-2 -mr-1" viewBox="0 0 20 20" fill="currentColor">
+                                                <path fill-rule="evenodd"
+                                                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                                    clip-rule="evenodd"></path>
+                                            </svg>
+                                        </button>
+                                    </span>
+                                    <div class="hidden dropdown-menu">
+                                        <div class="absolute mt-2 origin-top-right bg-white border border-gray-200 divide-y divide-gray-100 rounded-md shadow-lg outline-none z-10"
+                                            aria-labelledby="headlessui-menu-button-1" id="headlessui-menu-items-117"
+                                            role="menu">
+                                            <div class="py-1">
+                                                <a href="javascript:void(0)"
+                                                    class="text-gray-700 flex justify-between w-full px-4 py-2 text-sm leading-5 text-left"
+                                                    role="menuitem">Submenu 1</a>
+                                                <a href="javascript:void(0)"
+                                                    class="text-gray-700 flex justify-between w-full px-4 py-2 text-sm leading-5 text-left"
+                                                    role="menuitem">Submenu 2</a>
+                                                <span role="menuitem" tabindex="-1"
+                                                    class="flex justify-between w-full px-4 py-2 text-sm leading-5 text-left text-gray-700 cursor-not-allowed opacity-50"
+                                                    aria-disabled="true">New feature (soon)</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </li>
+
                             <li class="mr-1">
-                                <a href="#Section2"
-                                    class="inline-block no-underline hover:text-amber-500 hover:text-underline py-2 px-4">
-                                    Section 2
-                                </a>
+                                <a href="#">Option</a>
                             </li>
+
                             <li class="mr-1">
-                                <a href="#Section3"
-                                    class="inline-block no-underline hover:text-amber-500 hover:text-underline py-2 px-4">
-                                    Section 3
-                                </a>
+                                <a href="#">Option</a>
+                            </li>
+
+                            <li class="mr-1">
+                                <a href="#">Option</a>
                             </li>
                         </ul>
+                        <!-- SUB-MENU 1 -->
+                        <!-- <div class="relative">
+                                <input type="checkbox" id="sortbox" class="hidden absolute">
+                                <label for="sortbox" class="flex items-center ">
+                                    <span class="text-lg">Menu 1</span>
+                                    <svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                        viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M19 9l-7 7-7-7" />
+                                    </svg>
+                                </label>
 
+                                <div id="sortboxmenu"
+                                    class="absolute mt-1 top-full min-w-max shadow rounded opacity-0 bg-white border border-gray-400 transition ease-in-out z-10">
+                                    <ul class="block text-right text-gray-900">
+                                        <li><a href="#" class="block px-3 py-2 hover:bg-gray-200">OM 1</a></li>
+                                        <li><a href="#" class="block px-3 py-2 hover:bg-gray-200">Newest 1</a></li>
+                                        <li><a href="#" class="block px-3 py-2 hover:bg-gray-200">OM 1</a></li>
+                                        <li><a href="#" class="block px-3 py-2 hover:bg-gray-200">Newest 1</a></li>
+                                        <li><a href="#" class="block px-3 py-2 hover:bg-gray-200">OM 1</a></li>
+                                        <li><a href="#" class="block px-3 py-2 hover:bg-gray-200">Newest 1</a></li>
+                                    </ul>
+                                </div>
+                            </div> -->
+
+                        <!-- SUB-MENU 2 -->
+                        <!-- <div class="relative mt-10">
+                                <input type="checkbox" id="sortbox2" class="hidden absolute">
+                                <label for="sortbox2" class="flex items-center ">
+                                    <span class="text-lg">Menu 2</span>
+                                    <svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                        viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M19 9l-7 7-7-7" />
+                                    </svg>
+                                </label>
+
+                                <div id="sortboxmenu2"
+                                    class="absolute mt-1 top-full min-w-max shadow rounded opacity-0 bg-white border border-gray-400 transition ease-in-out z-10">
+                                    <ul class="block text-right text-gray-900">
+                                        <li><a href="#" class="block px-3 py-2 hover:bg-gray-200">OM 1</a></li>
+                                        <li><a href="#" class="block px-3 py-2 hover:bg-gray-200">Newest 1</a></li>
+                                        <li><a href="#" class="block px-3 py-2 hover:bg-gray-200">OM 1</a></li>
+                                        <li><a href="#" class="block px-3 py-2 hover:bg-gray-200">Newest 1</a></li>
+                                        <li><a href="#" class="block px-3 py-2 hover:bg-gray-200">OM 1</a></li>
+                                        <li><a href="#" class="block px-3 py-2 hover:bg-gray-200">Newest 1</a></li>
+                                    </ul>
+                                </div>
+                            </div> -->
+
+                        <!-- <div class="navbar lg:flex justify-end flex-1 items-center text-gray-700">
+                            <a href="#home">Home</a>
+                            <div class="subnav">
+                                <button class="subnavbtn">About <i class="fa fa-caret-down"></i></button>
+                                <div class="subnav-content">
+                                    <a href="#company">Company</a>
+                                    <a href="#team">Team</a>
+                                    <a href="#careers">Careers</a>
+                                </div>
+                            </div>
+                            <div class="subnav">
+                                <button class="subnavbtn">Services <i class="fa fa-caret-down"></i></button>
+                                <div class="subnav-content">
+                                    <a href="#bring">Bring</a>
+                                    <a href="#deliver">Deliver</a>
+                                    <a href="#package">Package</a>
+                                    <a href="#express">Express</a>
+                                </div>
+                            </div>
+                            <div class="subnav">
+                                <button class="subnavbtn">Partners <i class="fa fa-caret-down"></i></button>
+                                <div class="subnav-content">
+                                    <a href="#link1">Link 1</a>
+                                    <a href="#link2">Link 2</a>
+                                    <a href="#link3">Link 3</a>
+                                    <a href="#link4">Link 4</a>
+                                </div>
+                            </div>
+                            <a href="#contact">Contact</a>
+                        </div> -->
                     </div>
                 </div>
                 <hr class="border-b border-gray-100 opacity-25 my-0 py-0">
             </nav>
+
+            <!-- The navigation menu -->
+            <!-- <div class="navbar">
+                <a href="#home">Home</a>
+                <div class="subnav">
+                    <button class="subnavbtn">About <i class="fa fa-caret-down"></i></button>
+                    <div class="subnav-content">
+                        <a href="#company">Company</a>
+                        <a href="#team">Team</a>
+                        <a href="#careers">Careers</a>
+                    </div>
+                </div>
+                <div class="subnav">
+                    <button class="subnavbtn">Services <i class="fa fa-caret-down"></i></button>
+                    <div class="subnav-content">
+                        <a href="#bring">Bring</a>
+                        <a href="#deliver">Deliver</a>
+                        <a href="#package">Package</a>
+                        <a href="#express">Express</a>
+                    </div>
+                </div>
+                <div class="subnav">
+                    <button class="subnavbtn">Partners <i class="fa fa-caret-down"></i></button>
+                    <div class="subnav-content">
+                        <a href="#link1">Link 1</a>
+                        <a href="#link2">Link 2</a>
+                        <a href="#link3">Link 3</a>
+                        <a href="#link4">Link 4</a>
+                    </div>
+                </div>
+                <a href="#contact">Contact</a>
+            </div> -->
 
             <div class="flex flex-col items-center lg:justify-around lg:flex-row px-4 mx-auto max-w-screen-xl lg:px-6">
                 <section class="lg:w-1/2 py-12 text-gray-700" data-aos="fade-right">
@@ -151,7 +272,7 @@
                         neque ullam cupiditate atque deleniti error
                     </p>
                     <div class="flex flex-row gap-4 items-center mt-4 lg:flex-col lg:items-start">
-                        <button class="w-11/12 lg:w-2/6 bg-gray-300 hover:bg-gray-400 font-semibold py-2 px-2 rounded">
+                        <!-- <button class="w-11/12 lg:w-2/6 bg-gray-300 hover:bg-gray-400 font-semibold py-2 px-2 rounded">
                             <a href="tel:(999)999-9999" class="text-[1.1rem]">
                                 <i class="fa-solid fa-phone"></i>
                                 (999) 999-9999
@@ -162,7 +283,7 @@
                             <a href="#Contacto" class="text">
                                 Lorem ipsum
                             </a>
-                        </button>
+                        </button> -->
                     </div>
                 </section>
                 <section class="lg:w-1/2 p-3" data-aos="fade-up">
@@ -188,7 +309,7 @@
 
             <section class="mt-16 sm:py-16 bg-gray-100" id="Section2">
 
-                <div class="text-center grid grid-cols-2 gap-4">
+                <!-- <div class="text-center grid grid-cols-2 gap-4">
                     <div class="bg-white hover:drop-shadow-md hover:bg-slate-800 w-[12rem] h-[18rem] m-auto">
                         <div class="flex h-full">
                             <div class="m-auto">
@@ -217,7 +338,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
 
             </section>
 
