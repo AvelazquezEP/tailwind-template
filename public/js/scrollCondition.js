@@ -1,15 +1,17 @@
-window.onscroll = function (e) {
-    var scrolldown = window.screenY;
+document.addEventListener("scroll", function () {
+    var log = console.log;
+    var scrollpos = window.scrollY;
+    var nav = document.getElementById("navigation");
+    // scrollpos = window.scrollY;
 
-    const log = console.log;
-
-    log(window.scrollY);
-
-    document.getElementById('navigation');
-
-    if (scrolldown >= 201) {
-        log('GET 150 PX');
+    if (scrollpos > 10) {
+        log('GET 10')
+        // nav.style.backgroundColor = 'black';
+        // nav.classList.remove("bg-white");
+        // nav.classList.add("bg-black");
     } else {
-        log('DONT GET 150 PX')
+        log('Less than 10')
+        // nav.classList.remove("bg-black");
+        // nav.classList.add("bg-white");
     }
-};
+});

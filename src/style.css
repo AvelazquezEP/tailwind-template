@@ -235,3 +235,10 @@ h1:has(+ h2) {
 .nav {
     background-color: wheat;
 }
+
+.mediaTop {
+    display: block;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
