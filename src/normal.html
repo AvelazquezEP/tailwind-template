@@ -1,0 +1,528 @@
+<!doctype html>
+<html lang="es-MX">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="DESCRIPTION" />
+    <meta name="author" content="AUTHOR" />
+    <meta name="keywords" content="KEYWORDS, KEYWORDS" />
+    <link rel="icon" type="image/x-icon" href="/public/favicon.svg" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Link for each font we will be use here -->
+
+    <!-- CDN/TOOL/link for use the scroll animation  -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- TW Elements is free under AGPL, with commercial license required for specific uses. See more details: https://tw-elements.com/license/ and contact us for queries at tailwind@mdbootstrap.com -->
+    <script type="text/javascript" src="../node_modules/tw-elements/dist/js/tw-elements.umd.min.js"></script>
+
+    <script src="https://kit.fontawesome.com/b50aac37d5.js" crossorigin="anonymous"></script>
+    <!-- <link href="/dist/output.css" rel="stylesheet"> -->
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+    <link href="/src/style.css" rel="stylesheet" />
+    <title>Website title</title>
+</head>
+
+<body">
+
+    <header class="bg-gray-50">
+        <div>
+            <nav class="navbar navbar-expand-lg bg-body-tertiar fixed-top bg-white" id="navigation">
+                <div class="container-fluid flex">
+                    <a href="index.html">
+                        <img src="/public/img/EricpriceLogo.svg" class="h-9 mr-2 sm:h-9"
+                            style="height: 2.25rem; margin-right: 2rem;" alt="Brand title" loading="eager"
+                            title="Logo title" />
+                    </a>
+                    <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <!-- NAVBAR -->
+                    <div class="collapse navbar-collapse custom-nav" id="navbarNavDropdown">
+                        <ul class="navbar-nav">
+                            <!-- <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li> -->
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Dropdown link
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">About Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Services</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Dropdown link
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- fixed -->
+            <!-- <nav id="header" class="w-full top-0 bg-white fixed z-10">
+                <div
+                    class="bg-white w-full mx-auto flex flex-wrap items-center justify-between mt-0 py-2 max-w-screen-xl sm:py-5">
+                    <div class="pl-4 flex items-center">
+                        <a href="index.html">
+                            <img src="/public/img/EricpriceLogo.svg" class="h-9 mr-2 sm:h-9" alt="Brand title"
+                                loading="eager" title="Logo title" />
+                        </a>
+                    </div>
+
+                    <div class="block lg:hidden pr-4">
+                        <button id="nav-toggle" name="toggle"
+                            class="flex items-center p-1 text-gray-700 hover:text-gray-950 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+                            <i class="fa-solid fa-bars text-2xl">
+                                <title>Menu</title>
+                            </i>
+                        </button>
+                    </div>
+
+                    <div class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden mt-2 lg:mt-0 p-4 lg:p-0"
+                        id="nav-content">
+
+                        <div>
+                            <a href="#home" class="active">Home</a>
+                        </div>
+                        <div>
+                            <a href="#news">News</a>
+                        </div>
+                        <div>
+                            <a href="#contact">Contact</a>
+                        </div>
+                        <div class="dropdown">
+                            <button class="dropbtn">
+                                Dropdown
+                                <i class="fa fa-caret-down"></i>
+                            </button>
+                            <div class="dropdown-content">
+                                <a href="#">Link 1</a>
+                                <a href="#">Link 2</a>
+                                <a href="#">Link 3</a>
+                            </div>
+                        </div>
+                        <a href="#about">About</a>
+
+                        <div class="topnav" id="myTopnav">
+                        </div>
+                    </div>
+                </div>
+                <hr class="border-b border-gray-100 opacity-25 my-0 py-0">
+            </nav> -->
+            <!-- <ul class="list-reset lg:flex gap-8 justify-end flex-1 items-center text-gray-700">
+
+                            <li class="mr-1">
+                                <div class="relative inline-block text-left dropdown">
+                                    <span>
+                                        <button
+                                            class="inline-flex justify-center w-full px-4 py-2 font-medium leading-5 text-gray-700 transition duration-150 ease-in-out bg-white hover:text-gray-500"
+                                            type="button" aria-haspopup="true" aria-expanded="true">
+                                            <span class="hover:text-amber-500">
+                                                dropdown Menu
+                                            </span>
+                                            <svg class="w-5 h-5 ml-2 -mr-1" viewBox="0 0 20 20" fill="currentColor">
+                                                <path fill-rule="evenodd"
+                                                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                                    clip-rule="evenodd"></path>
+                                            </svg>
+                                        </button>
+                                    </span>
+                                    <div class="hidden dropdown-menu">
+                                        <div class="absolute mt-2 origin-top-right bg-white border border-gray-200 divide-y divide-gray-100 rounded-md shadow-lg outline-none z-10"
+                                            aria-labelledby="headlessui-menu-button-1" id="headlessui-menu-items-117"
+                                            role="menu">
+                                            <div class="py-1">
+                                                <a href="javascript:void(0)"
+                                                    class="text-gray-700 flex justify-between w-full px-4 py-2 text-sm leading-5 text-left"
+                                                    role="menuitem">Submenu 1</a>
+                                                <a href="javascript:void(0)"
+                                                    class="text-gray-700 flex justify-between w-full px-4 py-2 text-sm leading-5 text-left"
+                                                    role="menuitem">Submenu 2</a>
+                                                <span role="menuitem" tabindex="-1"
+                                                    class="flex justify-between w-full px-4 py-2 text-sm leading-5 text-left text-gray-700 cursor-not-allowed opacity-50"
+                                                    aria-disabled="true">New feature (soon)</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="mr-1">
+                                <div class="relative inline-block text-left dropdown">
+                                    <span>
+                                        <button
+                                            class="inline-flex justify-center w-full px-4 py-2 font-medium leading-5 text-gray-700 transition duration-150 ease-in-out bg-white hover:text-gray-500"
+                                            type="button" aria-haspopup="true" aria-expanded="true">
+                                            <span class="hover:text-amber-500">
+                                                dropdown Menu 2
+                                            </span>
+                                            <svg class="w-5 h-5 ml-2 -mr-1" viewBox="0 0 20 20" fill="currentColor">
+                                                <path fill-rule="evenodd"
+                                                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                                    clip-rule="evenodd"></path>
+                                            </svg>
+                                        </button>
+                                    </span>
+                                    <div class="hidden dropdown-menu">
+                                        <div class="absolute mt-2 origin-top-right bg-white border border-gray-200 divide-y divide-gray-100 rounded-md shadow-lg outline-none z-10"
+                                            aria-labelledby="headlessui-menu-button-1" id="headlessui-menu-items-117"
+                                            role="menu">
+                                            <div class="py-1">
+                                                <a href="javascript:void(0)"
+                                                    class="text-gray-700 flex justify-between w-full px-4 py-2 text-sm leading-5 text-left"
+                                                    role="menuitem">Submenu 1</a>
+                                                <a href="javascript:void(0)"
+                                                    class="text-gray-700 flex justify-between w-full px-4 py-2 text-sm leading-5 text-left"
+                                                    role="menuitem">Submenu 2</a>
+                                                <span role="menuitem" tabindex="-1"
+                                                    class="flex justify-between w-full px-4 py-2 text-sm leading-5 text-left text-gray-700 cursor-not-allowed opacity-50"
+                                                    aria-disabled="true">New feature (soon)</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="mr-1">
+                                <div class="relative inline-block text-left">
+                                    <span>
+                                        <button
+                                            class="inline-flex justify-center w-full px-4 py-2 font-medium leading-5 text-gray-700 transition duration-150 ease-in-out bg-white hover:text-gray-500"
+                                            type="button" aria-haspopup="true" aria-expanded="true">
+                                            <a href="#" class="hover:text-amber-500">
+                                                dropdown Menu 3
+                                            </a>
+                                        </button>
+                                    </span>
+                                </div>
+                            </li>
+                        </ul> -->
+
+            <div
+                class="flex flex-col items-center lg:justify-around lg:flex-row px-4 mx-auto max-w-screen-xl lg:px-6 mt-[4rem]">
+                <section class="lg:w-1/2 py-12 text-gray-700" data-aos="fade-right">
+                    <span class="text-xl">
+                        Lorem ipsum dolor sit amet
+                    </span>
+                    <h1 class="text-4xl leading-10 mt-8 font-bold">
+                        Lorem ipsum dolor sit amet
+                    </h1>
+                    <p class="mt-8 text-2xl font-light">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam maxime magni blanditiis quod
+                        neque ullam cupiditate atque deleniti error
+                    </p>
+                    <div class="flex flex-row gap-4 items-center mt-4 lg:flex-col lg:items-start">
+                        <!-- <button class="w-11/12 lg:w-2/6 bg-gray-300 hover:bg-gray-400 font-semibold py-2 px-2 rounded">
+                            <a href="tel:(999)999-9999" class="text-[1.1rem]">
+                                <i class="fa-solid fa-phone"></i>
+                                (999) 999-9999
+                            </a>
+                        </button>
+                        <button
+                            class="w-11/12 lg:w-2/6 border border-gray-300 hover:bg-gray-400  font-bold py-2 px-2 rounded">
+                            <a href="#Contacto" class="text">
+                                Lorem ipsum
+                            </a>
+                        </button> -->
+                    </div>
+                </section>
+                <section class="lg:w-1/2 p-3" data-aos="fade-up">
+                    <img src="" alt="" class="mx-auto" loading="eager" title="Title image">
+                </section>
+            </div>
+        </div>
+    </header>
+
+    <!-- MAIN -->
+    <main>
+        <div class="px-4 mx-auto max-w-screen-xl lg:px-6">
+            <section class="mt-16 sm:py-16 bg-gray-100" id="Section1">
+                <h2>Section 1</h2>
+
+                <div>
+                    <img class="mySlides" src="/public/img/EricpriceLogo.svg" style="height: 2.5rem;">
+                    <img class="mySlides" src="/public//favicon.svg">
+                    <!-- <img class="mySlides" src="/public/img/EricpriceLogo.svg">
+                    <img class="mySlides" src="/public//favicon.svg"> -->
+                </div>
+            </section>
+
+            <section class="mt-16 sm:py-16 bg-gray-100" id="Section2">
+
+                <!-- <div class="text-center grid grid-cols-2 gap-4">
+                    <div class="bg-white hover:drop-shadow-md hover:bg-slate-800 w-[12rem] h-[18rem] m-auto">
+                        <div class="flex h-full">
+                            <div class="m-auto">
+                                <h2>Residencia</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-white hover:drop-shadow-md hover:bg-slate-800 w-[12rem] h-[18rem] m-auto">
+                        <div class="flex h-full">
+                            <div class="m-auto">
+                                <p>Ciudadania Estaunidense</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-white hover:drop-shadow-md hover:bg-slate-800 w-[12rem] h-[18rem] m-auto">
+                        <div class="flex h-full">
+                            <div class="m-auto">
+                                <p>U visa</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-white hover:drop-shadow-md hover:bg-slate-800 w-[12rem] h-[18rem] m-auto">
+                        <div class="flex h-full">
+                            <div class="m-auto">
+                                <p>Tramite Consular</p>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+
+            </section>
+
+            <section class="mt-16 sm:py-16 bg-gray-100" id="Section3">
+                <h2>Section 3</h2>
+                <!-- Trigger/Open The Modal -->
+                <button id="myBtn">Open Modal</button>
+
+                <!-- The Modal -->
+                <div id="myModal" class="modal">
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                        <span class="close">&amp;times;</span>
+                        <p>Some text in the Modal..</p>
+                    </div>
+                </div>
+
+            </section>
+
+            <section class="mt-16 sm:py-16 bg-gray-100" id="Section4">
+                <h2>Section 4</h2>
+            </section>
+
+            <section class="mt-16 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6" id="Contacto" data-aos="zoom-in">
+                <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900">
+                    Contacto
+                </h2>
+                <!-- <p class="mb-8 lg:mb-16 font-normal text-center text-gray-500 sm:text-xl">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum impedit officiis maiores inventore
+                    aperiam sit
+                </p> -->
+
+                <section class="bg-gray-100">
+                    <div class="px-4 mx-auto max-w-screen-md">
+                        <input hidden type="text" value="TEST">
+                        <div class="flex flex-col gap-8">
+                            <div>
+                                <label for="input1" class="block mb-2 text-sm font-medium">
+                                    Input 1
+                                </label>
+                                <input type="text" id="input1" maxlength="40" name="input1" size="20"
+                                    class="shadow-sm bg-white border border-gray-300 text-sm rounded-md focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5"
+                                    placeholder="Input 1">
+                                <span id="msg_input_1" style="color: red;"></span>
+                            </div>
+                            <div>
+                                <label for="input2" class="block mb-2 text-sm font-medium">
+                                    Input 2
+                                </label>
+                                <input type="text" id="input2" maxlength="40" name="input2" size="20"
+                                    class="shadow-sm bg-white border border-gray-300 text-sm rounded-md focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5"
+                                    placeholder="Input 2">
+                            </div>
+                            <div>
+                                <label for="email" class="block mb-2 text-sm font-medium">
+                                    email
+                                </label>
+                                <input type="text" id="email" name="email" maxlength="80" size="20"
+                                    class="shadow-sm bg-white border border-gray-300 text-sm rounded-md focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5"
+                                    placeholder="email@input.com" required>
+                            </div>
+                            <div>
+                                <label for="phone" class="block mb-2 text-sm font-medium">
+                                    Phone number
+                                </label>
+                                <input type="text" id="phone" name="phone" maxlength="10" size="20"
+                                    class="shadow-sm bg-white border border-gray-300 text-sm rounded-md focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5"
+                                    onkeypress="return(event.charCode !=8 && event.charCode == 0 || (event.charCode >= 48 && event.charCode <= 57))"
+                                    pattern="\d*" onpaste="return false;" placeholder="9999999999" required>
+                            </div>
+                            <div>
+                                <label for="select5" class="block mb-2 text-sm font-medium">
+                                    Select Input 5
+                                </label>
+                                <select name="select5" id="select5" title="select5"
+                                    class="shadow-sm bg-white border border-gray-300 text-gray-900 text-sm rounded-md focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5"
+                                    required>
+                                    <option value="">-None-</option>
+                                    <option value="option1">Option 1</option>
+                                    <option value="option2">Option 2</option>
+                                    <option value="option3">Option 3</option>
+                                    <option value="option4">Option 4</option>
+                                    <option value="option5">Option 5</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label for="input6" class="block mb-2 text-sm font-medium">
+                                    Input 6 text area
+                                </label>
+                                <textarea name="message" id="message" rows="6"
+                                    class="block p-2.5 w-full text-sm text-gray-900 bg-white rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500"
+                                    placeholder="Example text"></textarea>
+                            </div>
+                            <div>
+                                <label for="input1" class="block mb-2 text-sm font-medium">
+                                    Input 2 radio
+                                </label>
+                                <div class="radioGroup">
+                                    <input type="radio" id="radio" name="radio" value="Yes" checked="true">
+                                    <label for="Agree">Yes</label>
+                                </div>
+                                <div class="radioGroup">
+                                    <input type="radio" id="radio" name="radio" value="No">
+                                    <label for="Agree">No</label>
+                                </div>
+                            </div>
+                            <div class="text-center mt-8">
+                                <button name="submitButton" id="submitButton"
+                                    class="w-11/12 py-2.5 px-5 mr-2 mb-2 text-xl font-medium focus:outline-none rounded-md border border-gray-200 focus:z-10 focus:ring-gray-200">
+                                    Send
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </section>
+        </div>
+    </main>
+
+    <footer class="bg-gray-50 mt-8 text-center text-gray-700">
+        <div class="flex flex-col gap-5 pt-5 px-4 mx-auto sm:py-16 lg:px-60 md:flex-row">
+            <!-- SECTION 1 -->
+            <div class="md:w-4/12">
+                <div class="mb-6">
+                    <a href="">
+                        <img src="" class="w-[15rem] mx-auto pb-4" alt="Brand logo" title="Bran title">
+                    </a>
+                    <div class="flex flex-col items-center gap-1 justify-center mt-2">
+                        <div>
+                            <a href="tel:(999)999-9999" class="text-base">
+                                <i class="fa-solid fa-phone"></i>
+                                (999) 999-9999
+                            </a>
+                        </div>
+                        <div>
+                            <a href="mailto:info@info.com" class="text-base">
+                                <i class="fa-regular fa-envelope"></i>
+                                info@info.com
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-row justify-around w-4/5 mx-auto">
+                    <div class="font-bold rounded-full bg-gray-200 flex items-center justify-center"
+                        style="height: 40px; width: 40px; font-size: 18px;">
+                        <a href="" target="_blank">
+                            <i class="fa-brands fa-facebook text-2xl text-[#3b5999]"></i>
+                        </a>
+                    </div>
+                    <div class="font-bold rounded-full bg-gray-200 flex items-center justify-center"
+                        style="height: 40px; width: 40px; font-size: 18px;">
+                        <a href="" target="_blank">
+                            <i class="fa-brands fa-tiktok text-2xl text-gray-900"></i>
+                        </a>
+                    </div>
+                    <div class="font-bold rounded-full bg-gray-200 flex items-center justify-center"
+                        style="height: 40px; width: 40px; font-size: 18px;">
+                        <a href="" target="_blank">
+                            <i class="fa-brands fa-instagram text-2xl text-[#e4405f]"></i>
+                        </a>
+                    </div>
+                    <div class="font-bold rounded-full bg-gray-200 flex items-center justify-center"
+                        style="height: 40px; width: 40px; font-size: 18px;">
+                        <a href="" target="_blank">
+                            <i class="fa-brands fa-youtube text-2xl text-[#FF0000]"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SECTION 2  -->
+            <div class="md:w-4/12">
+                <h2 class="mb-4 text-lg text-center font-semibold uppercase">Mapa del sitio</h2>
+                <ul class="text-center flex flex-col gap-3">
+                    <li>
+                        <a href="index.html">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="#Section1">Section 1</a>
+                    </li>
+                    <li>
+                        <a href="#Section2">Section 2</a>
+                    </li>
+                    <li>
+                        <a href="#Section3">Section 3</a>
+                    </li>
+                    <li>
+                        <a href="#Section4">Section 4</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="md:w-4/12">
+                <p class="text-center mb-4 text-lg font-semibold uppercase">Section 3</p>
+                <p>Content for this section Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores rerum</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- SCRIPT SECTION -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="/public/js/nav.js"></script>
+    <script src="/public/js/toggle.js"></script>
+    <script src="/public/js/validation.js"></script>
+    <script src="/public/js/banner.js"></script>
+    <script src="/public/js/modal.js"></script>
+    <script src="/public/js/scrollCondition.js"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    </body>
+
+</html>

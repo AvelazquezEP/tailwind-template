@@ -1,14 +1,15 @@
-// jQuery($ => {
-//     $('body').scroll(function () {
-//         var scroll = $(this).scrollTop();
-//         $('.top-nav').toggleClass('blue', scroll >= 100);
-//     });
-// });
+window.onscroll = function (e) {
+    var scrolldown = window.screenY;
 
-jQuery(document).scroll(function () {
-    if (jQuery(this).scrollTop() > 100) {
-        jQuery('#navigation').css({ "background": "red" });
+    const log = console.log;
+
+    log(window.scrollY);
+
+    document.getElementById('navigation');
+
+    if (scrolldown >= 201) {
+        log('GET 150 PX');
     } else {
-        jQuery('#navigation').css({ "background": "transparent" });
+        log('DONT GET 150 PX')
     }
-});
+};
