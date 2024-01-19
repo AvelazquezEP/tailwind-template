@@ -10,10 +10,10 @@ document.addEventListener("scroll", function () {
         // nav.style.backgroundColor = 'black';
         // nav.classList.remove("bg-white");
         // nav.classList.add("bg-black");
-        mediaTop.classList.add("d-none");
+        // mediaTop.classList.add("d-none");
     } else {
         log('Less than 10')
-        mediaTop.classList.remove("d-none");
+        // mediaTop.classList.remove("d-none");
         // nav.classList.remove("bg-black");
         // nav.classList.add("bg-white");
     }
