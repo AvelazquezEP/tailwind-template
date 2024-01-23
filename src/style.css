@@ -259,7 +259,13 @@ h1:has(+ h2) {
     margin-bottom: 2rem;
     text-align: center;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(1, 1fr);
+}
+
+@media only screen and (min-width: 900px) {
+    .service {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 
 .service-item {
@@ -301,7 +307,7 @@ h1:has(+ h2) {
 
 /* This container is needed to position the front and back side */
 .flip-card-inner {
-    position: relative;    
+    position: relative;
     width: 100%;
     height: 100%;
     text-align: center;
@@ -337,4 +343,91 @@ h1:has(+ h2) {
     background-color: #e9e9e9;
     color: black;
     transform: rotateY(180deg);
+}
+
+/* FOOTER */
+footer {
+    background-color: #aaa;
+    background-color: #b0b4b4;
+    text-align: center;
+    display: flex;
+}
+
+.footer-container {
+    width: 100%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    margin: 0 auto;
+}
+
+@media only screen and (min-width: 900px) {
+    .footer-container {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        align-content: center;
+    }
+}
+
+/* FOOTER SECTION */
+.footer a {
+    /* margin-top: rem; */
+    color: black;
+    text-decoration: none;
+}
+
+footer li {
+    list-style: none;
+}
+
+.social-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+@media only screen and (min-width: 900px) {
+    .social-footer {
+        padding-top: 1.5rem;
+    }
+}
+
+.media-icons-footer {
+    /* margin-top: 1rem; */
+    display: flex;
+    gap: 2.5rem;
+}
+
+/* font-bold rounded-full bg-gray-200 flex items-center justify-center  */
+.rounded-icon {
+    background-color: #888;
+    border-radius: 9999px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.route-site {
+    text-transform: uppercase;
+    /* margin-left: -1.1rem; */
+}
+
+.office-list,
+.routesite-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding-left: 0;
+}
+
+@media only screen and (min-width: 900px) {
+
+    .social-footer,
+    .route-site,
+    .office {
+        width: 33.33%;
+    }
 }
