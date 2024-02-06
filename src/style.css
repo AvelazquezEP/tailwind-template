@@ -233,13 +233,23 @@ h1:has(+ h2) {
 } */
 
 .nav {
+    display: flex;
+    flex-direction: column;
     background-color: wheat;
+}
+
+.custom-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .mediaTop {
     display: block;
     width: 100%;
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
 }
 
