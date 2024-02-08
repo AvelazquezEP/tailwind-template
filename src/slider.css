@@ -1,14 +1,20 @@
-.slider-container {
+/* .slider-container {
     position: relative;
     width: 100%;
     height: 400px;
     overflow: hidden;
-    margin: 0 auto;
 }
 
 .slider {
     display: flex;
-    width: 300%;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s ease;
+}
+
+.item-slider {
+    width: 33.33%;
+    display: flex;
     height: 100%;
     transition: transform 0.5s ease;
 }
@@ -20,6 +26,7 @@
 }
 
 .slider-controls {
+    display: flex;
     position: absolute;
     bottom: 10px;
     left: 50%;
@@ -30,4 +37,59 @@
 .next-button {
     padding: 10px 20px;
     margin: 0 5px;
+} */
+
+.slider {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
 }
+
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.slide.active {
+    opacity: 1;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.caption {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: #333;
+}
+
+.controls {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.prev,
+.next {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+/* #region  */
+
+/* #endregion */
