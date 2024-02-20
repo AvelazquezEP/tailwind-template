@@ -1,0 +1,66 @@
+body {
+    /* background-image: url('https://images.unsplash.com/photo-1519681393784-d120267933ba?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1124&q=100');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; */
+    --dot-bg: black;
+    --dot-color: white;
+    --dot-size: 1px;
+    --dot-space: 22px;
+    background:
+        linear-gradient(90deg, var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
+        linear-gradient(var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
+        var(--dot-color);
+}
+
+
+/* Use these custom variables... */
+:root {
+    /* --polka-bg-image:
+        radial-gradient(rgb(255, 255, 255) 28%, transparent 53.2%),
+        radial-gradient(rgb(255, 255, 255) 28%, transparent 53.2%);
+    --polka-bg-position: 0px 0px, 100px 100px;
+    --polka-bg-size: 200px 200px;
+    --polka-bg-color: rgb(133, 111, 111); */
+
+    --polka-bg-image:
+        radial-gradient(rgb(255, 255, 255) 10%, transparent 36.4%),
+        radial-gradient(rgb(255, 255, 255) 10%, transparent 36.4%);
+    --polka-bg-position: 0px 0px, 104px 104px;
+    --polka-bg-size: 208px 208px;
+    --polka-bg-color: rgb(133, 111, 111);
+}
+
+/* ...or add this class to an element */
+.polka {
+    /* background-image:
+        radial-gradient(rgb(255, 255, 255) 28%, transparent 53.2%),
+        radial-gradient(rgb(255, 255, 255) 28%, transparent 53.2%);
+    background-position: 0px 0px, 100px 100px;
+    background-size: 200px 200px;
+    background-color: rgb(133, 111, 111); */
+
+    background-image:
+        radial-gradient(rgb(255, 255, 255) 10%, transparent 36.4%),
+        radial-gradient(rgb(255, 255, 255) 10%, transparent 36.4%);
+    background-position: 0px 0px, 104px 104px;
+    background-size: 208px 208px;
+    background-color: rgb(133, 111, 111);
+
+}
+
+.glass {
+    height: 100vh;
+    background: rgba(212, 173, 173, 0.4);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(12.5px);
+    -webkit-backdrop-filter: blur(12.5px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+
+    /* backdrop-filter: blur(15px) saturate(180%);
+    -webkit-backdrop-filter: blur(15px) saturate(180%);
+    background-color: rgba(17, 25, 40, 0.75);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125); */
+}
