@@ -1,0 +1,107 @@
+# Datos generales
+
+$e${Cl32?cc1
+
+**Godaddy**
+
+```
+user: eric5price
+Pass: Los56anGeles&8Ca700!
+
+**GIGLAW SITE**
+https://thegiglaw.com/wp-admin/
+Username: mgranados
+Password: dCJ1lfPHH36GoEeYTkT*XJCf
+```
+
+**CallRail:**
+
+```
+User: Rterrazas@greencardla.com
+Pass: LAIA551442!
+```
+
+**SG:**
+
+- rterrazas@greencardla.com
+- LA2925%CA6655!
+
+**Survey Monkey:** LAIASurvey%90017!
+
+**SF:**
+
+```
+Email:
+rterrazas@greencardla.com
+
+Password:
+Fuckyou551442!
+```
+
+**SUMO**
+
+```
+a1h5f000000nAJZAA2 : Appointment Web Site - Virtual
+a1h5f000000nAJCAA2 : Appointment Web Site (National/Person)
+
+```
+
+Google/Gmail
+
+```jsx
+email: avelazquez.ep@gmail.com
+password: 700Flower!
+```
+
+avelazquez@abogadoericprice.com
+
+avelazquez2873@LosAngelesImmigration.onmicrosoft.com
+
+```php
+// $mail->Username   = 'support56@abogadoericprice.com';
+// $mail->Password   = '$L4ckC@n1ry80!#>';
+```
+
+**Linea IVY:** 7072405730
+
+**Data Usage:** https://greencardla.my.salesforce.com/setup/org/orgstorageusage.jsp?id=00D5f000006OVX8&setupid=CompanyResourceDisk&retURL=%2Fui%2Fsetup%2FSetup%3Fsetupid%3DDataManagement
+
+**GitHub Key:**
+//quitar los espatio al principio.
+github_ pat_ 11A535TYY0rO0H586lUbt4_os1LbCFF7Gukbc9bvBr9RJoSr2lU4RxBUPk9NEII3t0VPDKKQTRJJQF0W1t
+
+**SSH ACCESS - ERIC PRICE MAIN SERVER.**
+
+```
+**HOST:**
+ssh.abogadoericprice.com
+
+**USER:**
+u1088-plrzrs8atjig
+
+**Puerto:** 18765
+```
+
+**IP ADDRESS:**
+
+-Ethernet adapter Ethernet:
+
+- **IP:** 201.139.230.2
+- **IPv4:** 10.1.10.229
+- **Default Gateway:** 10.1.10.1
+
+-Ethernet adapter Ethernet 2:
+
+- **IPv4:** 192.168.56.1
+
+**API KEYS:**
+
+**cliente_ID (CONSUMER KEY):** 3MVG9p1Q1BCe9GmCTLOrzG0fy.Avu0cWom1hzgSzlZpvn.md7wGghadvLfkDKFVcYzeeeA7S23b8emt5JCbIq
+
+**client_secret (SECRET KEY):**
+D0EB3EE100CEA2862DE700068A246EA9087007D17A2EC39FC87C041FDB61B026
+
+**CODE:**
+aPrxehJTnWq6wuEt_NsKZ04RNFhnOqwO.Q.PcGJhR3_TTLjNSTWXSRNUXUmOk3OZvn_Egt0suQ%3D%3D
+
+**TOKEN CODE (ivy user)**
